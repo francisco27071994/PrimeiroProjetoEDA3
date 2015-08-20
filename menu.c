@@ -2,12 +2,14 @@
 
 
 int usaMenu() {
-	int escolha;
+	int escolha = 0;
 
-	do {
+	while(escolha != 1 && escolha != 2) {
 		escolha = menu();
-		printf("\n\nEscolha Incorreta\nTente Novamente!\n\n");
-	}while(escolha < 1 || escolha > 2);
+		if(escolha != 1 && escolha != 2) {
+			printf("Opção Inválida!\nTente Novamente.\n");
+		}
+	}
 
 	return escolha;
 }

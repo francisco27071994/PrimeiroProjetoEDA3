@@ -1,6 +1,6 @@
 #include"biblioteca.h"
 
-void extraiDadosDoArquivo() {
+void extraiDadosDoArquivoEJogaNaArvore() {
 
 	FILE* arquivo;
 	int id;
@@ -21,6 +21,8 @@ void extraiDadosDoArquivo() {
 		fscanf(arquivo, ";%f", &av2);
 		fscanf(arquivo, ";%f;", &av3);
 
-		printf("%d %s %.2f %.2f %.2f\n", id, nome, av1, av2, av3);
+		if(!feof(arquivo)) {
+
+		}
 	}
 }
