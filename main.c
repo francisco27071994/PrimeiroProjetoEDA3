@@ -2,6 +2,7 @@
 
 int main()
 {
-	usaMenu();
+	//usaMenu();
+	criaNovoArquivoModificado();
 	return 0;
 }
