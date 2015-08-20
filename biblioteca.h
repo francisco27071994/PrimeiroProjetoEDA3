@@ -5,3 +5,4 @@
 int menu();
 int usaMenu();
 void criaNovoArquivoModificado();
+void extraiDadosDoArquivo();
