@@ -16,10 +16,10 @@ typedef struct no_arvore {
 TNo* alocarNo(int id, char nome[255], float nota1, float nota2, float nota3);
 TNo* cadastrar(TNo* raiz, TNo* aux, int id, char nome[255], float nota1, float nota2, float nota3);
 void imprimirEmOrdem(TNo *arvore);
+void buscar(TNo* raiz, int id);
 
 int menu();
 int usaMenu();
 
 void criaNovoArquivoModificado();
-void extraiDadosDoArquivoEJogaNaArvore();
 
