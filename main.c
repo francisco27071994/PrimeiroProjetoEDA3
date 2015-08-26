@@ -30,14 +30,14 @@ int main() {
 	opcao = usaMenu();
 
 	if(opcao == 1) {
-		printf("Opção 1 Escolhida");
 		imprimirEmOrdem(raiz);
 	} else {
-		printf("Opção 2 Escolhida\n");
 		printf("Digite o id do aluno:\n");
 		scanf("%d", &id);
 		buscar(raiz, id);
 	}
+
+	fclose(arquivo);
 
 	return 0;
 }

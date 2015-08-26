@@ -23,3 +23,5 @@ int usaMenu();
 
 void criaNovoArquivoModificado();
 
+void limparTela();
+
