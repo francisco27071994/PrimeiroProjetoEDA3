@@ -4,7 +4,7 @@ int main() {
 	FILE* arquivo;
 	TNo* raiz = NULL;
 	int id, opcao;
-	char nome[255];
+	char nome[255], resp = 'S';
 	float av1, av2, av3;
 
 	criaNovoArquivoModificado();
@@ -27,14 +27,21 @@ int main() {
 		}
 	}
 
-	opcao = usaMenu();
+	while(resp == 'S' || resp == 's'){
+		opcao = usaMenu();
 
-	if(opcao == 1) {
-		imprimirEmOrdem(raiz);
-	} else {
-		printf("Digite o id do aluno:\n");
-		scanf("%d", &id);
-		buscar(raiz, id);
+		if(opcao == 1) {
+			imprimirEmOrdem(raiz);
+		} else {
+			printf("Digite o id do aluno:\n");
+			scanf("%d", &id);
+			buscar(raiz, id);
+		}
+
+		printf("Deseja coninuar, Escolhendo uma nova Ação?");
+		fflush(stdin);
+		scanf("\n%c", &resp);
+
 	}
 
 	fclose(arquivo);
